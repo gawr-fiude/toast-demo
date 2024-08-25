@@ -1,5 +1,8 @@
-# Vue 3 + Vite
+# Vue Simple Toast Demo
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project is a quick Demo for a Toast component.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+I added the **container** for the Toast Events directly in the App, as an Unordered List.
+The list has a fixed position so we can move around based on the Viewport. Depending on where it may be used, this positioning should most likely be absolute, based on a relative *content container*.
+
+The Toast Event component is mostly JS and CSS to animate the appearance of the event, as well as emit a *close* event so the list knows when to remove an item.
